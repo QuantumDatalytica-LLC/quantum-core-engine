@@ -2,8 +2,12 @@ from setuptools import setup, find_packages
 
 setup(
     name="quantum",
-    version="1.0.1",
+    version="1.0.2",
     packages=find_packages(),
+    include_package_data=True,  # Include all data files (important for including pytransform)
+    package_data={
+        "quantum": ["pytransform/*"],  # Include all files in the pytransform directory
+    },
     install_requires=[  # List of dependencies
         "requests==2.31.0",
         "psutil==6.0.0",
