@@ -1,26 +1,35 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="quantum",
-    version="1.0.8",
+    name="quantum-core-engine",
+    version="1.0.9",
     packages=find_packages(),
-    include_package_data=True,  # Include all data files (important for including pytransform)
+    include_package_data=True,  
     package_data={
-        "quantum": ["pytransform/*"],  # Include all files in the pytransform directory
+        "quantum": ["pytransform/*"],  
     },
-    install_requires=[  # List of dependencies
+    install_requires=[  
         "requests==2.31.0",
         "psutil==6.0.0",
         "GPUtil==1.4.0",
         "boto3==1.34.4",
         "cryptography==43.0.1"
     ],
-    description="Helping Package for QuantumDataLytica Machine",
-    author="Switchboard LLC",
-    author_email="hardik.kanak@softqubes.com",
+    description=(
+        "Quantum CoreEngine is the backbone of QuantumDataLytica’s machine execution framework, "
+        "providing essential functionalities for system monitoring, cloud integration, and secure computations."
+    ),
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    author="Quantum Datalytia LLC",
+    mailto:author_email="itsupport@quantumdatalytica.com",
+    url="https://github.com/QuantumDatalytica-LLC/quantum-core-engine.git",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+        "Topic :: Software Development :: Libraries",
+        "Intended Audience :: Developers",
     ],
+    python_requires=">=3.7",
 )
