@@ -13,7 +13,7 @@ setup(
         "psutil==6.0.0",
         "GPUtil==1.4.0",
         "boto3==1.34.4",
-        "cryptography==43.0.1"
+        "cryptography==43.0.1",
         "portalocker==2.7.0"
     ],
     description=(
