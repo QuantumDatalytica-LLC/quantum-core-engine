@@ -14,6 +14,7 @@ setup(
         "GPUtil==1.4.0",
         "boto3==1.34.4",
         "cryptography==43.0.1"
+        "portalocker==2.7.0"
     ],
     description=(
         "Quantum CoreEngine is the backbone of QuantumDataLytica’s machine execution framework, "
