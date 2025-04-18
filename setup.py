@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name="quantum-core-engine",
     version="1.0.9",
-    packages=find_packages(),
+    packages=find_packages(include=["qauantum", "quantum.*"]),
     include_package_data=True,  
     package_data={
         "quantum": ["pytransform/*"],  
