@@ -21,7 +21,7 @@ setup(
     ),
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    author="Quantum Datalytia LLC",
+    author="Quantum Datalytica Inc.",
     author_email="itsupport@quantumdatalytica.com",
     url="https://github.com/QuantumDatalytica-LLC/quantum-core-engine.git",
     classifiers=[
